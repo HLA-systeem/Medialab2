@@ -6,18 +6,19 @@
 
 <script>
 export default {
-  created: function () {
-    let sr = new window.webkitSpeechRecognition()
-    let textarea = Document.getElementById("reviewDes")
-    if(this.getTalk){
-      console.log(textarea)
-    }
-  },
+  created: function () {},
   watch: {},
+
   methods: {
-    toggleTTS(){
+    toggleTTS(e){
       this.getTalk = !this.getTalk
-      console.log(this.getTalk)
+    
+      if(this.getTalk){
+        let sr = new window.webkitSpeechRecognition()
+        //let textarea = Document.getElementById("reviewDes")
+        let textarea = e.target
+        console.log(textarea)
+      }
     }
   },
   components: {},
