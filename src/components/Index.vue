@@ -1,13 +1,25 @@
 <template>
     <div class="container mx-auto">
-       <textarea v-model="review.des" id="reviewDes" class="col-10 offset-1"></textarea>
+       <textarea v-model="review.des" id="reviewDes" class="col-10 offset-1" @click="toggleTTS()"></textarea>
     </div>
 </template>
 
 <script>
 export default {
+  created: function () {
+    let sr = new window.webkitSpeechRecognition()
+    let textarea = Document.getElementById("reviewDes")
+    if(this.getTalk){
+      console.log(textarea)
+    }
+  },
   watch: {},
-  methods: {},
+  methods: {
+    toggleTTS(){
+      this.getTalk = !this.getTalk
+      console.log(this.getTalk)
+    }
+  },
   components: {},
   computed: {
     review(){
@@ -15,7 +27,9 @@ export default {
     }
   },
   data() {
-    return {};
+    return {
+      getTalk: false
+    };
   }
 }
 </script>
