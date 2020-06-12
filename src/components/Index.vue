@@ -1,6 +1,6 @@
 <template>
     <div class="container mx-auto">
-       <textarea v-model="review.des" id="reviewDes" class="col-10 offset-1" @click="toggleTTS()"></textarea>
+       <textarea v-model="review.des" id="reviewDes" class="col-10 offset-1" @click="toggleTTS"></textarea>
     </div>
 </template>
 
