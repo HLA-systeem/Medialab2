@@ -5,7 +5,14 @@ import Vuex from "vuex";
 Vue.use(Vuex);
 
 export const store = new Vuex.Store({
-    state:{},  
+    state:{
+        review: {
+            author: "",
+            des: "",
+            score: 0,
+            uploadDate: new Date(),
+        }
+    },  
     getters:{},
     actions:{}, 
     mutations:{},

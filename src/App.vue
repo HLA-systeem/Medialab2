@@ -15,4 +15,11 @@ export default {
 </script>
 
 <style>
+.v-content{
+  background-color: #F8F8FF;
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px;
+}
+
 </style>
