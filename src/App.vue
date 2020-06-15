@@ -22,4 +22,12 @@ export default {
   margin: 0px;
 }
 
+.routeButton{
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
 </style>
