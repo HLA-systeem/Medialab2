@@ -7,7 +7,7 @@
             <router-link class="routeButton col-12" to="/searchR">Zoek Restaurant</router-link>
         </div>
         <div class="row">
-            <router-link class="routeButton col-12" to="/searchR">Opgeslagen Restaurants</router-link>
+            <router-link class="routeButton col-12" to="/saved">Opgeslagen Restaurants</router-link>
         </div>
     </div>
 </template>

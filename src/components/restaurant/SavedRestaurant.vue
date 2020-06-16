@@ -4,18 +4,11 @@
             <router-link class="routeButton col-12" to="/home">Videre</router-link>
         </div>
         <div class="row">
-            <input class="col-12" placeholder="Searchbar" type="text">
+            <router-link class="mx-auto my-auto" id='resLink' to="/restaurant">Restaurant Name</router-link>
         </div>
-        <div id="menuItem"> 
-            <div class="row">
-                <h4 class="offset-1">Gerecht naam</h4>
-            </div>
-             <div class="row">
-                 <p class="mx-auto">Gerecht info</p>
-             </div>
-             <div class="row">
-                <p class="offset-11" id="priceTag">price</p>
-             </div>
+        <div class="row">
+            <button class="col-6"><v-icon id="trashIcon" size="5em">mdi-delete</v-icon></button>
+            <button class="col-6"><v-icon id="downloadIcon" size="5em">mdi-cloud-download</v-icon></button>
         </div>
         <div class="row">
             <button class="col-6"><v-icon id="leftArrow" size="5em">mdi-arrow-left-bold</v-icon></button>
@@ -41,24 +34,14 @@ export default {
 
 
 <style scoped>
-input{
-    border: solid 1px black;
-    height: 60px;
-    font-size: 2em;
-    text-align: center;
+
+h4{
+    margin-top: 60px;
 }
 
 button{
     border: solid 1px black;
 }
 
-
-#menuItem{
-    height: 200px;
-}
-
-#priceTag{
-    margin-top: 80px
-}
 
 </style>

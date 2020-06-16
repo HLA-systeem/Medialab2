@@ -7,11 +7,11 @@
             <input class="col-12" placeholder="Searchbar" type="text">
         </div>
         <div class="row">
-             <thumb></thumb> <!--v-bind="restaurant" -->
+            <thumb></thumb> <!--v-bind="restaurant" -->
         </div>
         <div class="row">
             <button class="col-6"><v-icon id="leftArrow" size="5em">mdi-arrow-left-bold</v-icon></button>
-            <button class="col-6"><v-icon id="leftArrow" size="5em">mdi-arrow-right-bold</v-icon></button>
+            <button class="col-6"><v-icon id="rightArrow" size="5em">mdi-arrow-right-bold</v-icon></button>
         </div>
     </div>
 </template>
