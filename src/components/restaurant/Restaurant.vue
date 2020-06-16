@@ -15,7 +15,7 @@
              <router-link class="routeButton col-12" to="/restaurant">Resensies</router-link>
         </div>
         <div class="row">
-            <router-link class="routeButton col-12" to="/restaurant">Menu</router-link>
+            <router-link class="routeButton col-12" to="/menu">Menu</router-link>
         </div>
         <div class="row">
              <button class="col-12"><v-icon id="downloadIcon" size="5em" class="mx-auto">mdi-download-circle-outline</v-icon></button>
