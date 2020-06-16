@@ -4,24 +4,28 @@
             <router-link class="routeButton col-12" to="/home">Videre</router-link>
         </div>
         <div class="row">
-            <input class="col-12" type="text">
+            <input class="col-12" placeholder="Searchbar" type="text">
         </div>
         <div class="row">
-            <!-- restaurant component -->
+             <thumb></thumb> <!--v-bind="restaurant" -->
         </div>
         <div class="row">
-           <button class="col-6"><v-icon id="leftArrow" size="5em" class="col-12">mdi-arrow-left-bold</v-icon></button>
-          <button class="col-6"><v-icon id="leftArrow" size="5em" class="col-12">mdi-arrow-right-bold</v-icon></button>
+            <button class="col-6"><v-icon id="leftArrow" size="5em" class="col-12">mdi-arrow-left-bold</v-icon></button>
+            <button class="col-6"><v-icon id="leftArrow" size="5em" class="col-12">mdi-arrow-right-bold</v-icon></button>
         </div>
     </div>
 </template>
 
 <script>
+import Thumb from './RestaurantThumb';
+
 export default {
   created: function () {},
   watch: {},
   methods: {},
-  components: {},
+  components: {
+      'thumb': Thumb
+  },
   computed: {},
   data() {
     return {
@@ -46,6 +50,8 @@ export default {
 input{
     border: solid 1px black;
     height: 60px;
+    font-size: 2em;
+    text-align: center;
 }
 
 button{
