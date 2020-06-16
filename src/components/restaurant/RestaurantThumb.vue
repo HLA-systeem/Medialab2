@@ -1,5 +1,5 @@
 <template>
-    <router-link class="container col-12" to="/home">
+    <router-link class="container col-12" to="/restaurant">
       <div class="row">
         <div class="col-6">
           <p class="offset-2">Restaurant Naam</p>
