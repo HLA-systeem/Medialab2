@@ -19,7 +19,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
 
 .v-content{
-  background-color: #F8F8FF;
+  background-color: #F5F5F5;
   overflow: hidden;
   padding: 0px;
   margin: 0px;

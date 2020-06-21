@@ -1,16 +1,16 @@
 <template>
-    <router-link class="container col-12" to="/restaurant">
+    <router-link class="hExpandContainer routeButton mx-auto" to="/restaurant">
       <div class="row">
-        <div class="col-6">
-          <p class="offset-2">Restaurant Naam</p>
-          <p class="offset-2">Type</p>
+        <div class="col-5 mt-5">
+          <p>Restaurant Naam</p>
+          <p>Type</p>
         </div>
-        <div class="col-6">
+        <div class="col-6 mt-5">
           <p class="offset-5">score</p>
         </div>
       </div>
       <div class="row">
-        <p class="mx-auto">Afastand: 3KM</p>
+        <p class="mx-auto">Afstand: 3KM</p>
       </div>
     </router-link>
 </template>
@@ -33,11 +33,14 @@ export default {
 
 
 <style scoped>
-.container{
-    width: 100%;
-    height: 100%;
-    padding-top:0px;
-    padding-bottom:0px; 
+.hExpandContainer{
+  background-color: #8C3333;
+
+}
+
+p{
+  font-family: 'Roboto Mono', monospace;
+  color: #F5F5F5;
 }
 
 </style>

@@ -4,7 +4,7 @@
            <customHeader></customHeader>
         </div>
         <div class="row">
-            <router-link class="routeButton col-12" to="/about" id="overOns">Over ons</router-link>
+            <router-link class="routeButton col-12" to="/home" id="overOns">Over ons</router-link> <!-- /about -->
         </div>
         <div class="hExpandContainer mx-auto">
             <div class="row">
@@ -41,7 +41,7 @@ export default {
 
 <style scoped>
 
-.container{ /*needs to be here again for*/
+.container{ /*cannot be global*/
     padding:0px;
     margin: 0px;
     height: 90%;
