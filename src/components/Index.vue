@@ -54,12 +54,17 @@ export default {
 .container{ /*cannot be global*/
     padding:0px;
     margin: 0px;
-    height: 90%;
+    height: 80%;
 }
 
 #overOns, #zoekRes, #savedRes{
     background-color: #C64D4D;
     color:#F5F5F5;
+}
+
+#overOns{
+    height: 70px;
+    font-size: 1.5em;
 }
 
 #zoekRes, #savedRes{
