@@ -8,10 +8,20 @@
         </div>
         <div class="hExpandContainer mx-auto">
             <div class="row">
-                <router-link class="routeButton col-12" id="zoekRes" to="/searchR">ZOEK</router-link>
+                <router-link class="routeButton col-12" id="zoekRes" to="/searchR">
+                <div class="row">
+                    <v-icon size="3.5em" class="col-3 offset-2 icon">mdi-magnify</v-icon>
+                    <span class="offset-1 my-auto">ZOEK</span>
+                </div>
+                </router-link>
             </div>
             <div class="row">
-                <router-link class="routeButton col-12" id="savedRes" to="/saved">MENUS</router-link>
+                <router-link class="routeButton col-12" id="savedRes" to="/saved">
+                <div class="row">
+                    <v-icon size="3.5em" class="col-3 offset-2 icon">mdi-book-open</v-icon>
+                    <span class="offset-1 my-auto">MENUS</span>
+                </div>
+                </router-link>
             </div>
         </div>
 
@@ -57,6 +67,13 @@ export default {
     border: solid  5px #F5F5F5;
     font-family: 'Roboto Mono', monospace;
     font-size: 4em;
+}
+
+.icon{
+    margin-top: -20px;
+    padding: 0px;
+    color:#F5F5F5;
+    opacity: 0.8;
 }
 
 </style>
