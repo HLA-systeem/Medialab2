@@ -13,7 +13,7 @@
         </div>
         <div id="options">
             <div class="row">
-                <router-link class="routeButton col-12" to="/restaurant"><button class="col-6 mx-auto optionButton">RECENSIES</button></router-link>
+                <router-link class="routeButton col-12" to="/reviews"><button class="col-6 mx-auto optionButton">RECENSIES</button></router-link>
             </div>
             <div class="row">
                 <router-link class="routeButton col-12" to="/menu"><button class="col-6 mx-auto optionButton">MENU</button></router-link>

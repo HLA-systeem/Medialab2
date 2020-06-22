@@ -2,11 +2,11 @@
     <router-link class="hExpandContainer routeButton mx-auto" to="/restaurant">
       <div class="row">
         <div class="col-5 mt-5">
-          <p>Restaurant Naam</p>
-          <p>Type</p>
+          <p>Restaurant 1</p>
+          <p>Diner</p>
         </div>
         <div class="col-6 mt-5">
-          <p class="offset-5">score</p>
+          <v-icon class="star offset-5" size="5em">mdi-star</v-icon>
         </div>
       </div>
       <div class="row">
@@ -41,6 +41,12 @@ export default {
 p{
   font-family: 'Roboto Mono', monospace;
   color: #F5F5F5;
+  
 }
+
+.star{
+  color: #F6CD62
+}
+
 
 </style>

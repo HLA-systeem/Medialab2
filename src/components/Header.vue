@@ -1,10 +1,10 @@
 <template>
     <div class="row" id="headerCont">
-            <img class="col-1 pl-5" src="../assets/breakfast.png">
-            <router-link class="routeButton col-2 offset-4" to="/home">
-                <h1>Videre</h1>
-            </router-link>
-            <button class="offset-4 col-1"><v-icon id="face" size="5em">mdi-face-outline</v-icon></button>    
+        <img class="col-1 pl-5" src="../assets/breakfast.png">
+        <router-link class="routeButton col-2 offset-4" to="/home">
+            <h1>Videre</h1>
+        </router-link>
+        <button class="offset-4 col-1"><v-icon id="face" size="5em">mdi-face-outline</v-icon></button>    
     </div>
 </template>
 
