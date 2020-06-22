@@ -8,11 +8,11 @@
         </div>
          <div class="hExpandContainer mx-auto">
             <div class="row">
-                <thumb></thumb> <!--v-bind="restaurant" -->
+                <thumb v-bind:restaurant="restaurants[selected]"></thumb>
             </div>
             <div class="row">
-                <button class="col-6"><v-icon id="leftArrow" size="5em">mdi-arrow-left-bold</v-icon></button>
-                <button class="col-6"><v-icon id="rightArrow" size="5em">mdi-arrow-right-bold</v-icon></button>
+                <button class="col-6" @click="previous"><v-icon id="leftArrow" size="5em">mdi-arrow-left-bold</v-icon></button>
+                <button class="col-6" @click="next"><v-icon id="rightArrow" size="5em">mdi-arrow-right-bold</v-icon></button>
             </div>
          </div>
     </div>
@@ -21,11 +21,34 @@
 <script>
 import Header from '../Header'
 import Thumb from './RestaurantThumb';
+import {FS, DB} from '../../services/firebaseInit'
 
 export default {
-  created: function () {},
+  created: function () {
+    DB.collection('restaurants').get().then(table => { //.where('name', 'array-contains-any', searched)
+        this.restaurants = []
+
+        for(let i=0; i < table.docs.length; i++){
+            let data = table.docs[i].data()
+            this.restaurants.push(data)
+        }
+    })
+  },
   watch: {},
-  methods: {},
+  methods: {
+      next(){
+          this.selected += 1
+          if (this.selected >= this.restaurants.length){
+              this.selected = 0
+          }
+      },
+      previous(){
+          this.selected -= 1
+          if (this.selected < 0){
+              this.selected = (this.restaurants.length -1)
+          }
+      }
+  },
   components: {
       'thumb': Thumb,
       'customHeader': Header
@@ -33,7 +56,8 @@ export default {
   computed: {},
   data() {
     return {
-
+        selected: 0,
+        restaurants: null //[]
     };
   }
 }

@@ -2,7 +2,7 @@
     <router-link class="hExpandContainer routeButton mx-auto" to="/restaurant">
       <div class="row">
         <div class="col-5 mt-5">
-          <p>Restaurant 1</p>
+          <p>{{restaurant.name}}</p>
           <p>Diner</p>
         </div>
         <div class="col-6 mt-5">
@@ -22,7 +22,7 @@ export default {
   methods: {},
   components: {},
   computed: {},
-  //props: [restaurant], //{{}}
+  props: ['restaurant'], //{{}}
   data() {
     return {
 
