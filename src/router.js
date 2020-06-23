@@ -4,6 +4,7 @@ import Restaurant from "./components/restaurant/Restaurant.vue"
 import SavedRestaurant from "./components/restaurant/SavedRestaurant.vue"
 import Menu from "./components/Menu.vue"
 import Reviews from "./components/Reviews.vue"
+import About from "./components/About.vue"
 
 export default [
   { path: "/", component: Index, name: "index"},
@@ -13,4 +14,5 @@ export default [
   { path: "/saved", component: SavedRestaurant, name: "saved"},
   { path: "/menu", component: Menu, name: "menu"},
   { path: "/reviews", component: Reviews, name: "reviews"},
+  { path: "/aboutus", component: About, name: "about"},
 ];

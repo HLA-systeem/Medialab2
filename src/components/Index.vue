@@ -4,7 +4,7 @@
            <customHeader></customHeader>
         </div>
         <div class="row">
-            <router-link class="routeButton col-12" to="/home" id="overOns">Over ons</router-link> <!-- /about -->
+            <router-link class="routeButton col-12" to="/aboutus" id="overOns">Over ons</router-link> <!-- /about -->
         </div>
         <div class="hExpandContainer mx-auto">
             <div class="row">
