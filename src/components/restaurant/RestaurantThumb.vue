@@ -16,7 +16,7 @@
 </template>
 
 <script>
-export default {
+export default { //
   created: function () {},
   watch: {},
   methods: {},

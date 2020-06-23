@@ -11,8 +11,8 @@
                 <thumb v-bind:restaurant="restaurants[selected]"></thumb>
             </div>
             <div class="row">
-                <button class="col-6" @click="previous"><v-icon id="leftArrow" size="5em">mdi-arrow-left-bold</v-icon></button>
-                <button class="col-6" @click="next"><v-icon id="rightArrow" size="5em">mdi-arrow-right-bold</v-icon></button>
+                <button class="col-6" @keyup='move' @click="previous"><v-icon id="leftArrow" size="5em">mdi-arrow-left-bold</v-icon></button>
+                <button class="col-6"  @keyup='move' @click="next"><v-icon id="rightArrow" size="5em">mdi-arrow-right-bold</v-icon></button>
             </div>
          </div>
     </div>
@@ -34,8 +34,19 @@ export default {
         }
     })
   },
+  mounted: function () {
+    document.addEventListener("keyup", this.move);
+  },
   watch: {},
   methods: {
+      move(){
+          if(event.keyCode == 37){
+              this.previous()
+          }
+          if(event.keyCode == 39){
+              this.next()
+          }
+      },
       next(){
           this.selected += 1
           if (this.selected >= this.restaurants.length){
