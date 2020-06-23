@@ -7,7 +7,7 @@
             <input class="col-12" placeholder="Searchbar" type="text">
         </div>
          <div class="hExpandContainer mx-auto">
-            <div class="row">
+            <div class="row" v-if="this.restaurants">
                 <thumb v-bind:restaurant="restaurants[selected]"></thumb>
             </div>
             <div class="row">

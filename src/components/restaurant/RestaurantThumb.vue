@@ -1,5 +1,5 @@
 <template>
-    <router-link class="hExpandContainer routeButton mx-auto" to="/restaurant">
+    <router-link class="hExpandContainer routeButton mx-auto" :to="{ name: 'restaurant', params: {restaurantName: restaurant.name} }">
       <div class="row">
         <div class="col-5 mt-5">
           <p>{{restaurant.name}}</p>

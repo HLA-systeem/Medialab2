@@ -1,14 +1,14 @@
 <template>
-    <div class="container col-12">
+    <div class="container col-12" v-if="this.restaurant">
         <div class="row">
            <customHeader></customHeader>
         </div>
         <div class="row" id="restaurantHeader">
             <div class="col-6">
-                <p>Restaurant Naam</p>
+                <p>{{restaurant.name}}</p>
             </div>
             <div class="col-6">
-                <p>score</p>
+                <p>{{restaurant.genralScore}}</p> <!-- Note misspeling of general -->
             </div>
         </div>
         <div id="options">
@@ -28,9 +28,15 @@
 
 <script>
 import Header from '../Header'
+import {FS, DB} from '../../services/firebaseInit'
 
 export default {
-  created: function () {},
+  created: function () {
+    DB.collection('restaurants').where('name', '==', this.$route.params.restaurantName).get().then(table => { 
+        this.restaurant = table.docs[0].data()
+        console.log(this.restaurant)
+    })
+  },
   watch: {},
   methods: {},
   components: {
@@ -40,7 +46,7 @@ export default {
   //props: [restaurant], //{{}}
   data() {
     return {
-
+        restaurant: null
     };
   }
 }
