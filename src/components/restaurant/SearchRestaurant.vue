@@ -1,5 +1,5 @@
 <template>
-    <div class="container col-12">
+    <div class="container col-12" @keyup='move'>
         <div class="row">
            <customHeader></customHeader>
         </div>
@@ -11,8 +11,8 @@
                 <thumb v-bind:restaurant="restaurants[selected]"></thumb>
             </div>
             <div class="row">
-                <button class="col-6" @keyup='move' @click="previous"><v-icon id="leftArrow" size="5em">mdi-arrow-left-bold</v-icon></button>
-                <button class="col-6"  @keyup='move' @click="next"><v-icon id="rightArrow" size="5em">mdi-arrow-right-bold</v-icon></button>
+                <button class="col-6"  @click="previous"><v-icon id="leftArrow" size="5em">mdi-arrow-left-bold</v-icon></button>
+                <button class="col-6"  @click="next"><v-icon id="rightArrow" size="5em">mdi-arrow-right-bold</v-icon></button>
             </div>
          </div>
     </div>
@@ -45,6 +45,9 @@ export default {
           }
           if(event.keyCode == 39){
               this.next()
+          }
+          if(event.keyCode == 32){
+               this.$router.push({ name: "restaurant", params:{restaurantName: this.restaurants[this.selected].name} });
           }
       },
       next(){
