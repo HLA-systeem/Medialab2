@@ -58,7 +58,7 @@ export default {
     background-color: #8C3333;
     border: solid  5px #F5F5F5;
     font-family: 'Roboto Mono', monospace;
-    font-size: 4em;
+    font-size: 4.5em;
     color:#F5F5F5;
 }
 

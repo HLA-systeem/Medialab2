@@ -8,7 +8,7 @@
                 <p>{{restaurant.name}}</p>
             </div>
             <div class="col-6">
-                <p>{{restaurant.genralScore}}</p> <!-- Note misspeling of general -->
+                <p>Score: {{restaurant.genralScore}}</p> <!-- Note misspeling of general -->
             </div>
         </div>
         <div id="options">
@@ -57,6 +57,8 @@ export default {
 p{
   text-align: center;
   margin-top: 50px;
+  font-size: 2em;
+ 
 }
 
 .container{ /*cannot be global*/

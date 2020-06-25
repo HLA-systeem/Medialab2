@@ -40,8 +40,8 @@ export default { //
 
 p{
   font-family: 'Roboto Mono', monospace;
+  font-size: 2em;
   color: #F5F5F5;
-  
 }
 
 .star{

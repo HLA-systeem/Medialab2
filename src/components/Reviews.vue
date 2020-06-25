@@ -3,14 +3,14 @@
         <div class="row">
            <customHeader></customHeader>
         </div>
-        <div class="row" id="restaurantHeader">
+        <!-- <div class="row" id="restaurantHeader">
             <div class="col-6">
                 <p>Restaurant Naam</p>
             </div>
             <div class="col-6">
                 <p>score</p>
             </div>
-        </div>
+        </div> -->
         <div class="review">
             <div class="row reviewHeader">
                 <div class="col-6">
@@ -69,7 +69,8 @@ export default {
 <style scoped>
 p{
   text-align: center;
-  margin-top: 50px;
+
+  font-size: 2em;
 }
 
 .container{ /*cannot be global*/
