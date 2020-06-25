@@ -8,12 +8,12 @@
                 <router-link class="mx-auto my-auto" id='resLink' to="/restaurant">Restaurant Name</router-link>
             </div>
             <div class="row">
-                <button class="col-6"><v-icon id="trashIcon" size="5em">mdi-delete</v-icon></button>
-                <button class="col-6"><v-icon id="downloadIcon" size="5em">mdi-cloud-download</v-icon></button>
+                <button class="col-6"><v-icon id="trashIcon" size="7em">mdi-delete</v-icon></button>
+                <button class="col-6"><v-icon id="downloadIcon" size="7em">mdi-cloud-download</v-icon></button>
             </div>
             <div class="row">
-                <button class="col-6"><v-icon id="leftArrow" size="5em">mdi-arrow-left-bold</v-icon></button>
-                <button class="col-6"><v-icon id="rightArrow" size="5em">mdi-arrow-right-bold</v-icon></button>
+                <button class="col-6"><v-icon id="leftArrow" size="7em">mdi-arrow-left-bold</v-icon></button>
+                <button class="col-6"><v-icon id="rightArrow" size="7em">mdi-arrow-right-bold</v-icon></button>
             </div>
         </div>
     </div>
