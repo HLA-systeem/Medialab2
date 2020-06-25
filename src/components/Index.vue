@@ -3,9 +3,6 @@
         <div class="row">
            <customHeader></customHeader>
         </div>
-        <div class="row">
-            <router-link class="routeButton col-12" to="/aboutus" id="overOns">Over ons</router-link> <!-- /about -->
-        </div>
         <div class="hExpandContainer mx-auto">
             <div class="row">
                 <router-link class="routeButton col-12" id="zoekRes" to="/searchR">

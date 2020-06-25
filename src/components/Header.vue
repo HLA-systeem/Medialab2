@@ -1,10 +1,10 @@
 <template>
     <div class="row" id="headerCont">
-        <img class="col-1 pl-5" src="../assets/breakfast.png">
-        <router-link class="routeButton col-2 offset-4" to="/home">
+        <router-link class="routeButton col-2" to="/home">
             <h1>Videre</h1>
         </router-link>
-        <button class="offset-4 col-1"><v-icon id="face" size="5em">mdi-face-outline</v-icon></button>    
+        <router-link class="routeButton col-1" to="/aboutus" id="overOns">Over ons</router-link> <!-- /about -->
+        <button class="offset-7 col-1"><v-icon id="face" size="5em">mdi-face-outline</v-icon></button>    
     </div>
 </template>
 
@@ -48,5 +48,16 @@ h1{
 button{
     margin:0px;
     padding:0px;
+}
+
+#overOns{
+    background-color: #C64D4D;
+    color:#F5F5F5;
+}
+
+@media only screen and (max-width: 1000px) {
+    h1{
+        font-size: 2em;
+    }
 }
 </style>
