@@ -55,9 +55,19 @@ button{
     color:#F5F5F5;
 }
 
+#overOns{
+    font-size: 1.5em;
+}
+
+
 @media only screen and (max-width: 1000px) {
     h1{
         font-size: 2em;
+    }
+
+    
+    #overOns{
+        font-size: 1em;
     }
 }
 </style>
